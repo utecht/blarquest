@@ -1,0 +1,9 @@
+Sonya
+	implement sprite sheets
+	animation
+	chat box
+	
+Joseph
+	implement basic server
+	synch movement
+	

@@ -6,7 +6,9 @@ Created on Mar 9, 2010
 
 from socket import *
 import pickle
-from ..client.dataTest import *
+import sys, os
+sys.path.append( os.path.join( os.getcwd(), '../client' ) )
+from dataTest import *
 
 
 host = 'localhost'
@@ -21,4 +23,4 @@ print('Server running')
 while(True):
     data, addr = UDPSock.recvfrom(buf)
     print(data)
-    print(pickle.loads(data).getCors()) 
+    print(pickle.loads(data).getPos()) 

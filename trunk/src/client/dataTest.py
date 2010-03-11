@@ -6,10 +6,9 @@ Created on Mar 9, 2010
 
 class Blar:
     
-    def __init__(self, x, y, id):
+    def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.id = id
         
     def getPos(self):
         return (self.x, self.y)
@@ -21,6 +20,19 @@ class Blar:
     def move(self, x, y):
         self.x = self.x + x
         self.y = self.y + y
+    
+class EncapsTest:
+    set = {}
         
-    def getID(self):
-        return self.id
+    def addBlar(self, index, blar):
+        self.set[index] = blar
+        
+    def getBlar(self, index):
+        return self.set[index]
+    
+    def getAll(self):
+        return self.set.values()
+    
+    def has(self, index):
+        return index in self.set.keys()
+        

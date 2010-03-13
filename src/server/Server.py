@@ -8,7 +8,7 @@ import sys, os
 from socket import *
 sys.path.append( os.path.join( os.getcwd(), '../client' ) )
 from Screen import *
-from dataTest import *
+from Model import *
 import pickle
 from threading import Thread
 

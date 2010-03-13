@@ -5,7 +5,7 @@ Created on Mar 9, 2010
 '''
 from socket import *
 import pickle
-from dataTest import *
+from Model import *
 from Screen import Screen
 import random, time
 from threading import Thread

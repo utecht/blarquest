@@ -3,8 +3,6 @@ Created on Feb 21, 2010
 
 @author: Lamneth
 '''
-import sys, os
-sys.path.append( os.path.join( os.getcwd(), './client') )
 from Screen import *
 from Model import *
 from ClientTest import *

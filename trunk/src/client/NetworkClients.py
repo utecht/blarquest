@@ -48,13 +48,12 @@ class AccountClient(Thread):
         received = pickle.loads(self.sock.recv(1024))
         self.sock.close()
         
-        print("Sent: %s" % data)
         print("Received: %s" % received)
             
             
 model = EncapsTest()
 model.addBlar(1111, Blar(12, 54))
-data = 'lamneth blarblar'
+data = 'lamneth', 'testpass'
 client = AccountClient(model, data)
 client.start()
 #blar = Screen(model)
